@@ -1,0 +1,10 @@
+# Microsoft's package is pulled at runtime - never commit it
+*.msu
+RRTurbo-25H2/
+
+# OS + editor cruft
+Thumbs.db
+desktop.ini
+.DS_Store
+*.swp
+.vscode/
