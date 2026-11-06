@@ -42,8 +42,8 @@ pending monthly Windows updates first — install those, then run Step 2 again.
 
 This repo advances in stages, one release each:
 
-- **`v24H2-to-25H2`** — current.
-- **`v25H2-to-26H2`** — next, when Microsoft ships 26H2 as an enablement
+- **`24H2-to-25H2`** — current.
+- **`25H2-to-26H2`** — next, when Microsoft ships 26H2 as an enablement
   package (lands in `future-stages/`).
 
 Always grab the release that matches where your machine is now.
