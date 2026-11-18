@@ -48,6 +48,29 @@ This repo advances in stages, one release each:
 
 Always grab the release that matches where your machine is now.
 
+## RR Tune-Up (bonus tool)
+
+`RR Tune-Up` is a separate one-shot tool in this repo's releases. It runs on any
+Windows 11 machine and does two things:
+
+1. **SearchHost WebView2 fix (always runs).** Windows' Start/taskbar search
+   quietly spawns a hidden Edge WebView2 to render Bing/web results — ~360 MB of
+   idle RAM on the machines we measured. This removes it (local search still
+   works) and installs a tiny logon guard that re-applies the fix after Windows
+   updates. Browser-safe: it only ever touches the Windows search package's
+   WebView2, never your web browser.
+2. **The Renewable Revolt look (optional — it asks Y/N).** Press Enter to skip,
+   or type Y for a dark/grey theme, a decluttered taskbar, no Bing/web in Start
+   search, and the RR wallpaper. All reversible in Windows Settings.
+
+**Before you run it,** consider creating a System Restore Point (Start → type
+"restore" → **Create a restore point** → Create) so you can roll back if you ever
+want to.
+
+Grab it from the **`rr-tuneup`** release, **unblock the zip** (right-click →
+Properties → Unblock), extract, and double-click **`RUN - RR Tune-Up.bat`**.
+Restart when it finishes so the WebView2 fix takes effect.
+
 ## Scope
 
 This tool keeps the **OS** current. It does not add the local-AI stack — that's
